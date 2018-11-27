@@ -12,5 +12,6 @@ import cn.appsys.pojo.DevUser;
  */
 public interface DevUserService {
     //µÇÂ¼ÑéÖ¤
-    public DevUser login (String devCode,String password);
+    public DevUser login(String devCode, String devPassword) throws Exception;
+
 }

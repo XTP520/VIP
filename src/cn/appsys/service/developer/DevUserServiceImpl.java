@@ -18,15 +18,22 @@ import javax.annotation.Resource;
 public class DevUserServiceImpl implements DevUserService {
     @Resource
     private DevUserMapper mapper;
+
     @Override
-    public DevUser login(String devCode, String password) {
+    public DevUser login(String devCode, String devPassword) {
+        // TODO Auto-generated method stub
         DevUser user = null;
-        user = mapper.getLoginUser(devCode);
-        if (null != user){
-            if (!user.getDevPassword().equals(password)){
+        try {
+            user = mapper.getLoginUser(devCode);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //∆•≈‰√‹¬Î
+        if (null != user) {
+            if (!user.getDevPassword().equals(devPassword))
                 user = null;
-            }
         }
         return user;
+
     }
 }
