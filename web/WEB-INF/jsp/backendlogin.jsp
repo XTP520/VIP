@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>APP开发者平台</title>
+    <title>后台管理系统</title>
 
     <!-- Bootstrap -->
     <link href="${pageContext.request.contextPath }/statics/css/bootstrap.min.css" rel="stylesheet">
@@ -33,12 +33,12 @@
         <div class="animate form login_form">
           <section class="login_content">
             <form action="dologin" method="post">
-              <h1>APP开发者平台</h1>
+              <h1>后台管理系统</h1>
               <div>
-                <input type="text" class="form-control" name="devCode" placeholder="请输入用户名" required="" />
+                <input type="text" class="form-control" name="userCode" placeholder="请输入用户名" required="" />
               </div>
               <div>
-                <input type="password" class="form-control" name="devPassword" placeholder="请输入密码" required="" />
+                <input type="password" class="form-control" name="userPassword" placeholder="请输入密码" required="" />
               </div>
               <span>${error }</span>
               <div>
