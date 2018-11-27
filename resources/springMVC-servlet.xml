@@ -12,8 +12,11 @@
         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <import resource="applicationContext-jdbc.xml"/>
     <!--处理DispatcherServlet截获的请求-->
+
     <!--静态资源-->
-    <mvc:resources mapping="/static/**" location="/statics/"/>
+    <mvc:resources mapping="/statics/**" location="/statics/"/>
+
+
     <!--<bean name="/index.html" class="org.news.controller.IndexController"></bean>-->
     <context:component-scan base-package="cn.appsys.controller"/>
     <mvc:annotation-driven/>
