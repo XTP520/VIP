@@ -1,7 +1,6 @@
 package cn.appsys.dao.devuser;
 
 import cn.appsys.pojo.DevUser;
-import org.apache.ibatis.annotations.Param;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,6 +12,6 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface DevUserMapper {
     //根据devUser获取用户记录
-    public DevUser getLoginUser (@Param("devCode") String devCode);
+    public DevUser getLoginUser (String devCode);
 
 }

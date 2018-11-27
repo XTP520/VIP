@@ -24,6 +24,6 @@ public class DevUserController {
     @RequestMapping(value = "/login")
     public String login(){
         logger.debug("Controller===================>");
-        return "devlogin";
+        return "index";
     }
 }
