@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Param;
  * Description:
  */
 public interface DevUserMapper {
-    //根据devUser获取用户记录
+    //根据devUser获取用户记录qwe
     public DevUser getLoginUser(@Param("devCode") String devCode)throws Exception;
 
 
